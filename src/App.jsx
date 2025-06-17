@@ -7,12 +7,15 @@ import About from './pages/About';
 import Shop from './pages/Shop';
 import AllProducts from './pages/Allproduct';
 import Contact from './pages/Contact';
+import ScrollToTop from './components/ScrollToTop';
 import './App.css';
+
 
 function App() {
   return (
     <Router>
       <div className="app">
+        <ScrollToTop />
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />

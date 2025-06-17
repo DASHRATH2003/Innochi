@@ -9,7 +9,6 @@ import spice1 from "../assets/Basil.jpg";
 import spice2 from "../assets/Cassia.webp";
 import spice3 from "../assets/Cumin.jpg";
 import spice4 from "../assets/Caraway.webp";
-import spice5 from "../assets/Lovage.jpeg";
 import spice6 from "../assets/Mace.webp";
 import spice7 from "../assets/Mint.jpg";
 
@@ -17,8 +16,7 @@ import sliderImage1 from "../assets/exportimport2.webp";
 import sliderImage2 from "../assets/exportimport3.jpg";
 import sliderImage3 from "../assets/allimport.jpg";
 import freshAllImage from "../assets/freshallimage.jpg";
-import tomatoesImage from "../assets/vagitable1.jpeg";
-import spicesCollectionImage from "../assets/spiceboard.webp";
+
 // Add certification image imports
 import mcaLogo from "../assets/ministryofcorporetion.webp";
 import commerceLogo from "../assets/depertmentofcommerce.webp";
@@ -29,21 +27,9 @@ import spiceboardLogo from "../assets/spiceboard.webp";
 import fssaiLogo from "../assets/fssai.webp";
 
 const Home = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    company: "",
-    product: "",
-    quantity: "",
-    message: "",
-  });
-
-  const [selectedImage, setSelectedImage] = useState(null);
   const [selectedProduct, setSelectedProduct] = useState(null);
-
   const navigate = useNavigate();
   const location = useLocation();
-
   const [currentPage, setCurrentPage] = useState(0);
   const productsPerPage = 3;
 
@@ -56,7 +42,7 @@ const Home = () => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000,
-    arrows: true,
+    arrows: false,
     fade: true,
     appendDots: (dots) => (
       <div style={{ position: "absolute", top: "20px", width: "100%" }}>
@@ -82,36 +68,6 @@ const Home = () => {
       },
       {
         breakpoint: 768,
-        settings: {
-          slidesToShow: 1,
-        },
-      },
-    ],
-  };
-
-  const certificationSliderSettings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 3000,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-        },
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 2,
-        },
-      },
-      {
-        breakpoint: 480,
         settings: {
           slidesToShow: 1,
         },
@@ -152,61 +108,6 @@ const Home = () => {
       rating: 5,
       text: "The quality of their organic products is exceptional. Very professional team and excellent communication.",
       location: "Canada",
-    },
-  ];
-
-  const imageDetails = [
-    {
-      id: 1,
-      image: sliderImage1,
-      title: "Processing Facility",
-      description:
-        "State-of-the-art processing facility equipped with modern machinery and technology for spice processing.",
-      details: [
-        "Temperature controlled environment",
-        "Advanced cleaning and sorting systems",
-        "Quality testing laboratory",
-        "Hygienic packaging units",
-      ],
-    },
-    {
-      id: 2,
-      image: sliderImage2,
-      title: "Quality Control",
-      description:
-        "Rigorous quality control processes ensuring premium grade spices for international markets.",
-      details: [
-        "ISO certified testing procedures",
-        "Multiple quality checkpoints",
-        "Expert quality analysts",
-        "Modern testing equipment",
-      ],
-    },
-    {
-      id: 3,
-      image: sliderImage3,
-      title: "Packaging Unit",
-      description:
-        "Advanced packaging facility ensuring product freshness and safety during transit.",
-      details: [
-        "Food-grade packaging materials",
-        "Multiple packaging sizes",
-        "Vacuum sealing technology",
-        "Export-ready packaging",
-      ],
-    },
-    {
-      id: 4,
-      image: sliderImage1, // You can replace this with another image
-      title: "Storage Facility",
-      description:
-        "Modern warehousing facility with controlled environment for optimal product storage.",
-      details: [
-        "Climate controlled storage",
-        "Pest-free environment",
-        "Organized inventory system",
-        "Quick dispatch facility",
-      ],
     },
   ];
 
@@ -519,7 +420,6 @@ const Home = () => {
           element.scrollIntoView({ behavior: "smooth" });
         }, 100);
       }
-      // Clear the state after scrolling
       window.history.replaceState({}, document.title);
     }
   }, [location]);
@@ -619,54 +519,33 @@ const Home = () => {
         
 
         {/* Company Introduction Section */}
-        <section id="about-section" className="company-intro-section">
-          <div className="company-intro-container">
-            <div className="intro-wrapper">
-              <div className="intro-content">
-                <h2 className="company-title">
-                  Welcome to Inochi International
-                </h2>
+        <section className="vision-section">
+  <div className="vision-container">
+    <div className="vision-wrapper">
+      <div className="vision-content">
+        <h2 className="vision-title">Welcome To Inochi International</h2>
+        <div className="vision-text">
+          <p>
+            Welcome to Inochi International Pvt. Ltd, a Bangalore-based exporter of the finest Indian spices and premium basmati rice.
+            Established in 2023 and headquartered in Doddanekundi (Postal Code: 560037), we bring the vibrant flavors of India directly to 
+            discerning customers in Japan and beyond.
+          </p>
+          <button
+            className="vision-button"
+            onClick={() => navigate("/about")}
+          >
+            Learn More <span className="vision-arrow">→</span>
+          </button>
+        </div>
+      </div>
+      <div className="vision-image">
+        <img src={freshAllImage} alt="Inochi International Overview" />
+      </div>
+    </div>
+  </div>
+</section>
 
-                <div className="intro-text">
-                  <p>
-                    We are a leading export-import company specializing in
-                    premium quality Indian products. With years of experience in
-                    international trade, we ensure reliable and efficient
-                    delivery of products worldwide.
-                  </p>
-                  <p>
-                    Our commitment to quality, competitive pricing, and
-                    excellent customer service has made us a trusted name in
-                    global trade.
-                  </p>
 
-                  <button
-                    className="about-nav-button"
-                    style={{
-                      marginBottom: "20px",
-                      padding: "12px 28px",
-                      background: "#0A3A5E",
-                      color: "white",
-                      border: "none",
-                      borderRadius: "5px",
-                      fontSize: "1.1rem",
-                      fontWeight: 500,
-                      cursor: "pointer",
-                      marginTop: "10px",
-                    }}
-                    onClick={() => navigate("/about")}
-                  >
-                    Learn More About Us
-                  </button>
-                </div>
-              </div>
-
-              <div className="intro-image">
-                <img src={freshAllImage} alt="Inochi International Facility" />
-              </div>
-            </div>
-          </div>
-        </section>
 
         {/* Reviews Section */}
 
@@ -691,8 +570,10 @@ const Home = () => {
                       <img src={product.image} alt={product.title} />
                     </div>
                     <div className="product-content">
-                      <h3>{product.title}</h3>
-                      <p>{product.shortDesc}</p>
+                      <div>
+                        <h3>{product.title}</h3>
+                        <p>{product.shortDesc}</p>
+                      </div>
                       <button
                         className="read-more-button"
                         onClick={() => setSelectedProduct(product)}
@@ -729,29 +610,6 @@ const Home = () => {
           <div className="certifications-container">
             <h2 className="section-title">Our Certifications</h2>
             <div className="certificates-grid">
-              {/* First set of certificates */}
-              <div className="certificate-item">
-                <img src={mcaLogo} alt="Ministry of Corporate Affairs" />
-              </div>
-              <div className="certificate-item">
-                <img src={commerceLogo} alt="Department of Commerce" />
-              </div>
-              <div className="certificate-item">
-                <img src={taxLogo} alt="Income Tax Department" />
-              </div>
-              <div className="certificate-item">
-                <img src={dgftLogo} alt="DGFT" />
-              </div>
-              <div className="certificate-item">
-                <img src={icegateLogo} alt="ICEGATE" />
-              </div>
-              <div className="certificate-item">
-                <img src={spiceboardLogo} alt="Spices Board" />
-              </div>
-              <div className="certificate-item">
-                <img src={fssaiLogo} alt="FSSAI" />
-              </div>
-              {/* Duplicate certificates for seamless scrolling */}
               <div className="certificate-item">
                 <img src={mcaLogo} alt="Ministry of Corporate Affairs" />
               </div>

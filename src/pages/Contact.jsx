@@ -114,12 +114,14 @@ const Contact = () => {
             <div className="info-card slide-in-left delay-2 hover-lift">
               <i className="fas fa-phone"></i>
               <h3>Phone Number</h3>
-              <p>+91 1234567890</p>
+              <p>+91 9535520948</p>
+              <p>+91 7892492739</p>
             </div>
+            
             <div className="info-card slide-in-left delay-3 hover-lift">
               <i className="fas fa-envelope"></i>
               <h3>Email Address</h3>
-              <p>info@inochiinternational.com</p>
+              <p>vijaykumar@innochiinternational.com</p>
             </div>
           </div>
         </div>
