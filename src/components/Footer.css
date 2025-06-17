@@ -122,6 +122,31 @@
   line-height: 1.5;
 }
 
+/* Address Styles */
+.address-item {
+  align-items: flex-start !important;
+}
+
+.address-item i {
+  margin-top: 5px;
+}
+
+.address-content {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.address-content span {
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.4;
+  transition: color 0.3s ease;
+}
+
+.address-content span:hover {
+  color: #fff;
+}
+
 /* Bottom Bar */
 .footer-bottom {
   background: rgba(0, 0, 0, 0.2);
@@ -168,6 +193,10 @@
 
   .footer-section:first-child {
     grid-column: 1 / -1;
+  }
+
+  .address-content {
+    font-size: 0.95rem;
   }
 }
 

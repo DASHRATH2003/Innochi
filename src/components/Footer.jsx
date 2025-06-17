@@ -63,19 +63,25 @@ const Footer = () => {
           <ul className="footer-links">
             <li>
               <i className="fas fa-phone"></i>
-              <span>+91 123 456 7890</span>
+              <span>+91 9535520948</span>
+            </li>
+            <li>
+              <i className="fas fa-phone"></i>
+              <span>+91 7892492739</span>
             </li>
             <li>
               <i className="fas fa-envelope"></i>
-              <span>info@inochiinternational.com</span>
+              <span>vijaykumar@innochiinternational.com</span>
             </li>
-            <li>
+            <li className="address-item">
               <i className="fas fa-map-marker-alt"></i>
-              <span>123 Business Street, Mumbai, India</span>
-            </li>
-            <li>
-              <i className="fas fa-clock"></i>
-              <span>Mon - Fri: 9:00 AM - 6:00 PM</span>
+              <div className="address-content">
+                <span>185/1A, 5th Cross Rd,</span>
+                <span>near Raghavendra Swamy Temple Road,</span>
+                <span>Gururaja Layout, Doddanekundi,</span>
+                <span>Vibhutipura, Bengaluru,</span>
+                <span>Karnataka 560037</span>
+              </div>
             </li>
           </ul>
         </div>
