@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import './Allproduct.css';
 import '../styles/animations.css';
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import ProductCard from '../components/ProductCard';
 
 // Import all spice images
@@ -60,6 +60,7 @@ import sage from '../assets/Sage.webp';
 import savory from '../assets/Savory.webp';
 
 const AllProducts = ({ category }) => {
+  const navigate = useNavigate();
   const [selectedCategory, setSelectedCategory] = useState(category || 'all');
   const [filteredProducts, setFilteredProducts] = useState([]);
   const [currentPage, setCurrentPage] = useState(0);
@@ -85,28 +86,28 @@ const AllProducts = ({ category }) => {
       name: 'Black Pepper',
       image: pepper,
       category: 'spices',
-      description: 'Our Premium Black Pepper is sourced from the finest farms in South India, known for producing some of the world’s most pungent and flavorful peppercornsr'
+      description: 'Our Premium Black Pepper is sourced from the finest farms in South India, known for producing some of the world's most pungent and flavorful peppercornsr'
     },
     {
       id: 4,
       name: "Bird's Eye Chilli",
       image: birdsEyeChilli,
       category: 'spices',
-      description: 'Our Bird’s Eye Chilli is one of the spiciest naturally grown chillies, prized for its intense heat, vibrant red color, and fiery kick. '
+      description: 'Our Bird's Eye Chilli is one of the spiciest naturally grown chillies, prized for its intense heat, vibrant red color, and fiery kick. '
     },
     {
       id: 5,
       name: 'Capsicum',
       image: capsicum,
       category: 'herbs',
-      description: 'Our Bird’s Eye Chilli, also known as Dhani mirch, Thai chilli, or African devil, is a small, slender chilli with an explosive heat level that adds bold character to any cuisine. '
+      description: 'Our Bird's Eye Chilli, also known as Dhani mirch, Thai chilli, or African devil, is a small, slender chilli with an explosive heat level that adds bold character to any cuisine.'
     },
     {
       id: 6,
       name: 'Red Chilli',
       image: chilli,
       category: 'spices',
-      description: 'Our Premium Quality Red Chilli is cultivated in the fertile lands of India, renowned for producing some of the world’s most vibrant and flavorful chilli varieties.'
+      description: 'Our Premium Quality Red Chilli is cultivated in the fertile lands of India, renowned for producing some of the world's most vibrant and flavorful chilli varieties.'
     },
     {
       id: 7,
@@ -141,7 +142,7 @@ const AllProducts = ({ category }) => {
       name: 'Cumin Seeds',
       image: cumin,
       category: 'seeds',
-      description: 'Our Premium Cumin Seeds are sourced from the finest farms of Rajasthan and Gujarat, India — regions globally recognized for producing high-oil content, uniform color.'
+      description: 'Our Premium Cumin Seeds are sourced from the finest farms of Rajasthan and Gujarat, India  regions globally recognized for producing high-oil content, uniform color.'
     },
     {
       id: 12,
@@ -275,6 +276,10 @@ const AllProducts = ({ category }) => {
     // Alternative: window.location.href = '/'; // Navigate to home
   };
 
+  const handleInquiry = () => {
+    navigate('/contact');
+  };
+
   return (
     <div className="products-page">
       <button className="quit-button" onClick={handleQuit}>
@@ -329,7 +334,7 @@ const AllProducts = ({ category }) => {
                 <div className="product-info">
                   <h3>{product.name}</h3>
                   <p className="product-description">{product.description}</p>
-                  <button className="inquiry-btn hover-scale">Send Inquiry</button>
+                  <button className="inquiry-btn hover-scale" onClick={handleInquiry}>Send Inquiry</button>
                 </div>
               </div>
             ))}
@@ -361,7 +366,7 @@ const AllProducts = ({ category }) => {
           <div className="cta-content">
             <h2>Can't Find What You're Looking For?</h2>
             <p>Contact us for custom orders and specific requirements</p>
-            <button className="cta-button hover-scale">Contact Us</button>
+            <button className="cta-button hover-scale" onClick={handleInquiry}>Contact Us</button>
           </div>
         </div>
       </section>

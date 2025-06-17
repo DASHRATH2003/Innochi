@@ -315,102 +315,11 @@ const Home = () => {
     return productDetails.slice(start, start + productsPerPage);
   };
 
-  const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prevState) => ({
-      ...prevState,
-      [name]: value,
-    }));
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log("Form submitted:", formData);
-    setFormData({
-      name: "",
-      email: "",
-      company: "",
-      product: "",
-      quantity: "",
-      message: "",
-    });
-    alert("Thank you for your inquiry. We will get back to you soon!");
-  };
-
-  const handleQuoteRequest = () => {
-    // Scroll to the inquiry form
-    const inquirySection = document.querySelector(".inquiry-section");
-    if (inquirySection) {
-      inquirySection.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
-  const handleSampleRequest = () => {
-    // Show sample request message
-    alert(
-      'Thank you for your interest in our samples. Please fill out the inquiry form and mention "Sample Request" in the message field. Our team will get back to you shortly.'
-    );
-    // Scroll to the inquiry form
-    const inquirySection = document.querySelector(".inquiry-section");
-    if (inquirySection) {
-      inquirySection.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
-  const handleSolutionClick = (type) => {
-    // Handle solution card clicks
-    console.log(`Selected solution: ${type}`);
-  };
-
-  const handlePackagingRequest = () => {
-    // Handle packaging request
-    console.log("Requesting custom packaging solution");
-  };
-
-  const handleShippingQuote = () => {
-    // Handle shipping quote request
-    console.log("Requesting shipping quote");
-  };
-
-  const handleImageClick = (id) => {
-    setSelectedImage(selectedImage === id ? null : id);
-  };
-
-  // Close modal when clicking outside
   const handleModalClick = (e) => {
     if (e.target.classList.contains("modal-overlay")) {
       setSelectedProduct(null);
     }
   };
-
-  useEffect(() => {
-    // Initialize Intersection Observer
-    const observerOptions = {
-      root: null,
-      rootMargin: "0px",
-      threshold: 0.2,
-    };
-
-    const handleIntersection = (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("active");
-        }
-      });
-    };
-
-    const observer = new IntersectionObserver(
-      handleIntersection,
-      observerOptions
-    );
-
-    // Observe all elements with scroll-animate class
-    document.querySelectorAll(".scroll-animate").forEach((element) => {
-      observer.observe(element);
-    });
-
-    return () => observer.disconnect();
-  }, []);
 
   useEffect(() => {
     if (location.state?.scrollTo) {
@@ -426,12 +335,9 @@ const Home = () => {
 
   useEffect(() => {
     if (location.state?.scrollToCertificates) {
-      const certificatesSection = document.getElementById(
-        "certificates-section"
-      );
+      const certificatesSection = document.getElementById("certificates-section");
       if (certificatesSection) {
         certificatesSection.scrollIntoView();
-        // Clear the state after scrolling
         window.history.replaceState({}, document.title);
       }
     }
@@ -466,8 +372,8 @@ const Home = () => {
                       Your trusted partner in international trade and
                       export-import solutions.
                     </p>
-                    <button className="slider-button">
-                      Learn More <span className="button-arrow">→</span>
+                    <button className="slider-button" onClick={() => navigate('/contact')}>
+                      Contact Us <span className="button-arrow">→</span>
                     </button>
                   </div>
                 </div>
@@ -484,8 +390,8 @@ const Home = () => {
                       Delivering excellence through carefully selected and
                       certified products.
                     </p>
-                    <button className="slider-button">
-                      Explore Products <span className="button-arrow">→</span>
+                    <button className="slider-button" onClick={() => navigate('/contact')}>
+                      Contact Us <span className="button-arrow">→</span>
                     </button>
                   </div>
                 </div>
@@ -502,7 +408,7 @@ const Home = () => {
                       Connected globally, delivering locally with expertise and
                       reliability.
                     </p>
-                    <button className="slider-button">
+                    <button className="slider-button" onClick={() => navigate('/contact')}>
                       Contact Us <span className="button-arrow">→</span>
                     </button>
                   </div>
