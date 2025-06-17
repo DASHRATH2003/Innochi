@@ -86,35 +86,35 @@ const AllProducts = ({ category }) => {
       name: 'Black Pepper',
       image: pepper,
       category: 'spices',
-      description: 'Our Premium Black Pepper is sourced from the finest farms in South India, known for producing some of the world's most pungent and flavorful peppercornsr'
+      description: 'Our Premium Black Pepper is sourced from the finest farms in South India, known for producing some of the world\'s most pungent and flavorful peppercorns.'
     },
     {
       id: 4,
       name: "Bird's Eye Chilli",
       image: birdsEyeChilli,
       category: 'spices',
-      description: 'Our Bird's Eye Chilli is one of the spiciest naturally grown chillies, prized for its intense heat, vibrant red color, and fiery kick. '
+      description: 'Our Bird\'s Eye Chilli is one of the spiciest naturally grown chillies, prized for its intense heat, vibrant red color, and fiery kick.'
     },
     {
       id: 5,
       name: 'Capsicum',
       image: capsicum,
       category: 'herbs',
-      description: 'Our Bird's Eye Chilli, also known as Dhani mirch, Thai chilli, or African devil, is a small, slender chilli with an explosive heat level that adds bold character to any cuisine.'
+      description: 'Our Bird\'s Eye Chilli, also known as Dhani mirch, Thai chilli, or African devil, is a small, slender chilli with an explosive heat level that adds bold character to any cuisine.'
     },
     {
       id: 6,
       name: 'Red Chilli',
       image: chilli,
       category: 'spices',
-      description: 'Our Premium Quality Red Chilli is cultivated in the fertile lands of India, renowned for producing some of the world's most vibrant and flavorful chilli varieties.'
+      description: 'Our Premium Quality Red Chilli is cultivated in the fertile lands of India, renowned for producing some of the world\'s most vibrant and flavorful chilli varieties.'
     },
     {
       id: 7,
       name: 'Paprika',
       image: paprika,
       category: 'spices',
-      description: 'Our Rich and Colorful Paprika is finely ground from premium, sun-ripened red peppers grown in nutrient-rich Indian soil. '
+      description: 'Our Rich and Colorful Paprika is finely ground from premium, sun-ripened red peppers grown in nutrient-rich Indian soil.'
     },
     {
       id: 8,
@@ -135,14 +135,14 @@ const AllProducts = ({ category }) => {
       name: 'Coriander',
       image: coriander,
       category: 'herbs',
-      description: 'Our Fresh Coriander Leaves (also known as cilantro or dhaniya) are hand-picked from lush green farms and delivered within hours of harvest to ensure optimal freshness..'
+      description: 'Our Fresh Coriander Leaves (also known as cilantro or dhaniya) are hand-picked from lush green farms and delivered within hours of harvest to ensure optimal freshness.'
     },
     {
       id: 11,
       name: 'Cumin Seeds',
       image: cumin,
       category: 'seeds',
-      description: 'Our Premium Cumin Seeds are sourced from the finest farms of Rajasthan and Gujarat, India  regions globally recognized for producing high-oil content, uniform color.'
+      description: 'Our Premium Cumin Seeds are sourced from the finest farms of Rajasthan and Gujarat, India - regions globally recognized for producing high-oil content, uniform color.'
     },
     {
       id: 12,
@@ -151,7 +151,6 @@ const AllProducts = ({ category }) => {
       category: 'seeds',
       description: 'Our High-Quality Fennel Seeds are carefully harvested from the fertile lands of India and sun-dried to perfection. Known for their sweet, licorice-like flavor.'
     },
-
     {
       id: 13,
       name: 'fenugreek',
@@ -164,28 +163,28 @@ const AllProducts = ({ category }) => {
       name: 'celery',
       image: celery,
       category: 'spices',
-      description: 'Celery seeds, derived from the wild celery plant, are small, brown seeds known for their strong, earthy, and slightly bitter flavor. '
+      description: 'Celery seeds, derived from the wild celery plant, are small, brown seeds known for their strong, earthy, and slightly bitter flavor.'
     },
     {
       id: 15,
       name: 'aniseed',
       image: aniseed,
       category: 'spices',
-      description: 'Aniseed, commonly known as saunf in India, is a sweet and aromatic spice known for its delicate licorice-like flavor. '
+      description: 'Aniseed, commonly known as saunf in India, is a sweet and aromatic spice known for its delicate licorice-like flavor.'
     },
     {
       id: 16,
       name: "ajowan",
-      image:ajowan,
+      image: ajowan,
       category: 'spices',
-      description: 'Ajowan seeds, also known as Ajwain or carom seeds, are small, oval-shaped seeds with a strong, thyme-like aroma and a pungent, slightly bitter taste. '
+      description: 'Ajowan seeds, also known as Ajwain or carom seeds, are small, oval-shaped seeds with a strong, thyme-like aroma and a pungent, slightly bitter taste.'
     },
     {
       id: 17,
       name: 'Capsicum',
       image: aniseed,
       category: 'herbs',
-      description: 'Aniseed, also known as saunf in India, is a sweet and aromatic spice with a flavor reminiscent of licorice. It is widely used in culinary, medicinal, and confectionery applications. '
+      description: 'Aniseed, also known as saunf in India, is a sweet and aromatic spice with a flavor reminiscent of licorice. It is widely used in culinary, medicinal, and confectionery applications.'
     },
     {
       id: 18,
@@ -199,21 +198,21 @@ const AllProducts = ({ category }) => {
       name: 'dill',
       image: dill,
       category: 'spices',
-      description: 'Dill seeds, known as Suva or Sowa in India, are flat, oval-shaped seeds with a warm, slightly bitter flavor and a strong aromatic scent similar to caraway. '
+      description: 'Dill seeds, known as Suva or Sowa in India, are flat, oval-shaped seeds with a warm, slightly bitter flavor and a strong aromatic scent similar to caraway.'
     },
     {
       id: 20,
       name: 'cinnamon',
       image: cinnamon,
       category: 'herbs',
-      description: 'Cinnamon, known as Dalchini in India, is a highly fragrant and flavorful spice derived from the inner bark of the Cinnamomum tree. .'
+      description: 'Cinnamon, known as Dalchini in India, is a highly fragrant and flavorful spice derived from the inner bark of the Cinnamomum tree.'
     },
     {
       id: 21,
       name: 'cassia',
       image: cassia,
       category: 'spices',
-      description: 'Cassia, often referred to as Chinese Cinnamon, is a robust and flavorful spice obtained from the bark of the Cinnamomum cassia tree. I'
+      description: 'Cassia, often referred to as Chinese Cinnamon, is a robust and flavorful spice obtained from the bark of the Cinnamomum cassia tree.'
     },
     {
       id: 22,
