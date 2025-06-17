@@ -63,8 +63,6 @@ const AllProducts = ({ category }) => {
   const navigate = useNavigate();
   const [selectedCategory, setSelectedCategory] = useState(category || 'all');
   const [filteredProducts, setFilteredProducts] = useState([]);
-  const [currentPage, setCurrentPage] = useState(0);
-  const productsPerPage = 6;
 
   const allProducts = [
     {
@@ -100,7 +98,7 @@ const AllProducts = ({ category }) => {
       name: 'Capsicum',
       image: capsicum,
       category: 'herbs',
-      description: 'Our Bird\'s Eye Chilli, also known as Dhani mirch, Thai chilli, or African devil, is a small, slender chilli with an explosive heat level that adds bold character to any cuisine.'
+      description: 'Our fresh capsicum is known for its crisp texture and sweet flavor, perfect for adding color and crunch to any dish.'
     },
     {
       id: 6,
@@ -153,89 +151,284 @@ const AllProducts = ({ category }) => {
     },
     {
       id: 13,
-      name: 'fenugreek',
+      name: 'Fenugreek',
       image: fenugreek,
       category: 'spices',
       description: 'Fenugreek seeds, known as methi in India, are small, golden-yellow seeds with a distinctive bitter-sweet flavor and a strong aromatic presence.'
     },
     {
       id: 14,
-      name: 'celery',
+      name: 'Celery',
       image: celery,
       category: 'spices',
       description: 'Celery seeds, derived from the wild celery plant, are small, brown seeds known for their strong, earthy, and slightly bitter flavor.'
     },
     {
       id: 15,
-      name: 'aniseed',
+      name: 'Aniseed',
       image: aniseed,
       category: 'spices',
       description: 'Aniseed, commonly known as saunf in India, is a sweet and aromatic spice known for its delicate licorice-like flavor.'
     },
     {
       id: 16,
-      name: "ajowan",
+      name: 'Ajowan',
       image: ajowan,
       category: 'spices',
       description: 'Ajowan seeds, also known as Ajwain or carom seeds, are small, oval-shaped seeds with a strong, thyme-like aroma and a pungent, slightly bitter taste.'
     },
     {
       id: 17,
-      name: 'Capsicum',
-      image: aniseed,
-      category: 'herbs',
-      description: 'Aniseed, also known as saunf in India, is a sweet and aromatic spice with a flavor reminiscent of licorice. It is widely used in culinary, medicinal, and confectionery applications.'
-    },
-    {
-      id: 18,
-      name: 'caraway',
+      name: 'Caraway',
       image: caraway,
       category: 'spices',
       description: 'Caraway seeds, also known as Shahi Jeera or Persian Cumin, are aromatic seeds with a warm, sweet, and slightly peppery flavor.'
     },
     {
-      id: 19,
-      name: 'dill',
+      id: 18,
+      name: 'Dill',
       image: dill,
       category: 'spices',
       description: 'Dill seeds, known as Suva or Sowa in India, are flat, oval-shaped seeds with a warm, slightly bitter flavor and a strong aromatic scent similar to caraway.'
     },
     {
-      id: 20,
-      name: 'cinnamon',
+      id: 19,
+      name: 'Cinnamon',
       image: cinnamon,
-      category: 'herbs',
-      description: 'Cinnamon, known as Dalchini in India, is a highly fragrant and flavorful spice derived from the inner bark of the Cinnamomum tree.'
+      category: 'spices',
+      description: 'Our premium cinnamon is known for its sweet, woody flavor and intense aroma, perfect for both sweet and savory dishes.'
     },
     {
-      id: 21,
-      name: 'cassia',
+      id: 20,
+      name: 'Cassia',
       image: cassia,
       category: 'spices',
       description: 'Cassia, often referred to as Chinese Cinnamon, is a robust and flavorful spice obtained from the bark of the Cinnamomum cassia tree.'
     },
     {
-      id: 22,
-      name: 'garlic',
+      id: 21,
+      name: 'Garlic',
       image: garlic,
       category: 'herbs',
-      description: 'Garlic, known as Lahsun in India, is one of the most widely used culinary and medicinal ingredients across the globe. Recognized for its strong aroma and pungent flavor.'
+      description: 'Our premium garlic is known for its pungent flavor and aroma, essential for countless culinary applications.'
+    },
+    {
+      id: 22,
+      name: 'Curry Leaf',
+      image: curry,
+      category: 'herbs',
+      description: 'Our fresh curry leaves add an authentic touch to Indian dishes with their unique aroma and flavor.'
     },
     {
       id: 23,
-      name: 'curry',
-      image: curry,
-      category: 'seeds',
-      description: 'Curry leaves, known as Kadi Patta in India, are aromatic herbs widely used in South Asian cuisine to enhance the flavor of dishes.'
+      name: 'Kokam',
+      image: kokam,
+      category: 'spices',
+      description: 'Kokum, a unique spice from Western India, adds a pleasant sourness to dishes and is known for its cooling properties.'
     },
     {
       id: 24,
-      name: 'kokam',
-      image: kokam,
+      name: 'Mint',
+      image: mint,
+      category: 'herbs',
+      description: 'Our fresh mint leaves are known for their cooling effect and refreshing flavor, perfect for beverages and culinary uses.'
+    },
+    {
+      id: 25,
+      name: 'Mustard Seeds',
+      image: mustard,
       category: 'seeds',
-      description: 'Kokum, scientifically known as Garcinia Indica, is a tropical fruit native to the Western Ghats of India, especially Maharashtra, Goa, and Karnataka.'
+      description: 'Our premium mustard seeds are known for their pungent flavor and are essential in Indian tempering.'
+    },
+    {
+      id: 26,
+      name: 'Parsley',
+      image: parsley,
+      category: 'herbs',
+      description: 'Our fresh parsley adds a bright, clean flavor and beautiful green color to any dish.'
+    },
+    {
+      id: 27,
+      name: 'Pomegranate Seeds',
+      image: pomegranate,
+      category: 'seeds',
+      description: 'Our dried pomegranate seeds add a tangy sweetness and beautiful color to dishes.'
+    },
+    {
+      id: 28,
+      name: 'Saffron',
+      image: saffron,
+      category: 'spices',
+      description: 'Our premium saffron threads are known for their intense color, aroma, and flavor.'
+    },
+    {
+      id: 29,
+      name: 'Vanilla',
+      image: vanilla,
+      category: 'spices',
+      description: 'Our premium vanilla beans are rich in flavor and aroma, perfect for desserts and baking.'
+    },
+    {
+      id: 30,
+      name: 'Tejpat',
+      image: tejpat,
+      category: 'herbs',
+      description: 'Our Indian bay leaves (Tejpat) add a distinct aroma to Indian dishes.'
+    },
+    {
+      id: 31,
+      name: 'Long Pepper',
+      image: longPepper,
+      category: 'spices',
+      description: 'Long pepper, known as Pippali, has a unique spicy flavor different from black pepper.'
+    },
+    {
+      id: 32,
+      name: 'Star Anise',
+      image: starAnise,
+      category: 'spices',
+      description: 'Our star anise has a distinct licorice-like flavor, essential in many Asian dishes.'
+    },
+    {
+      id: 33,
+      name: 'Sweet Flag',
+      image: sweetFlag,
+      category: 'herbs',
+      description: 'Sweet flag, or Vacha, is known for its aromatic properties and traditional uses.'
+    },
+    {
+      id: 34,
+      name: 'Greater Galangal',
+      image: greaterGalangal,
+      category: 'spices',
+      description: 'Greater galangal adds a unique pine-like flavor to Asian dishes.'
+    },
+    {
+      id: 35,
+      name: 'Horseradish',
+      image: horseradish,
+      category: 'spices',
+      description: 'Our horseradish root is known for its pungent heat and strong flavor.'
+    },
+    {
+      id: 36,
+      name: 'Capers',
+      image: caper,
+      category: 'herbs',
+      description: 'Our capers add a tangy, briny flavor to Mediterranean dishes.'
+    },
+    {
+      id: 37,
+      name: 'Cloves',
+      image: clove,
+      category: 'spices',
+      description: 'Our premium cloves are known for their intense aroma and warm, sweet flavor.'
+    },
+    {
+      id: 38,
+      name: 'Asafoetida',
+      image: asafoetida,
+      category: 'spices',
+      description: 'Asafoetida (Hing) adds a unique flavor to Indian dishes and aids in digestion.'
+    },
+    {
+      id: 39,
+      name: 'Camboge',
+      image: camboge,
+      category: 'spices',
+      description: 'Camboge (Kokum) is known for its sour taste and is used in Indian coastal cuisine.'
+    },
+    {
+      id: 40,
+      name: 'Hyssop',
+      image: hyssop,
+      category: 'herbs',
+      description: 'Hyssop has a bitter-minty flavor and is used in both culinary and medicinal applications.'
+    },
+    {
+      id: 41,
+      name: 'Juniper Berries',
+      image: juniper,
+      category: 'spices',
+      description: 'Our juniper berries add a pine-like flavor to dishes and are essential in gin production.'
+    },
+    {
+      id: 42,
+      name: 'Bay Leaf',
+      image: bayLeaf,
+      category: 'herbs',
+      description: 'Our bay leaves add a subtle flavor to soups, stews, and sauces.'
+    },
+    {
+      id: 43,
+      name: 'Lovage',
+      image: lovage,
+      category: 'herbs',
+      description: 'Lovage has a celery-like flavor and is used in European cuisine.'
+    },
+    {
+      id: 44,
+      name: 'Marjoram',
+      image: marjoram,
+      category: 'herbs',
+      description: 'Marjoram has a sweet, oregano-like flavor perfect for Mediterranean dishes.'
+    },
+    {
+      id: 45,
+      name: 'Nutmeg',
+      image: nutmeg,
+      category: 'spices',
+      description: 'Our whole nutmeg adds warm, sweet notes to both sweet and savory dishes.'
+    },
+    {
+      id: 46,
+      name: 'Mace',
+      image: mace,
+      category: 'spices',
+      description: 'Mace, the outer covering of nutmeg, has a more delicate and complex flavor.'
+    },
+    {
+      id: 47,
+      name: 'Basil',
+      image: basil,
+      category: 'herbs',
+      description: 'Our fresh basil is aromatic and flavorful, perfect for Italian and Thai cuisine.'
+    },
+    {
+      id: 48,
+      name: 'Poppy Seeds',
+      image: poppy,
+      category: 'seeds',
+      description: 'Our poppy seeds add texture and nutty flavor to baked goods and savory dishes.'
+    },
+    {
+      id: 49,
+      name: 'Allspice',
+      image: allspice,
+      category: 'spices',
+      description: 'Allspice combines flavors of cinnamon, nutmeg, and cloves in one unique spice.'
+    },
+    {
+      id: 50,
+      name: 'Rosemary',
+      image: rosemary,
+      category: 'herbs',
+      description: 'Our fresh rosemary has a pine-like aroma and is perfect for Mediterranean dishes.'
+    },
+    {
+      id: 51,
+      name: 'Sage',
+      image: sage,
+      category: 'herbs',
+      description: 'Our sage has an earthy, slightly peppery flavor perfect for poultry and stuffing.'
+    },
+    {
+      id: 52,
+      name: 'Savory',
+      image: savory,
+      category: 'herbs',
+      description: 'Savory has a peppery thyme-like flavor and is used in European cuisine.'
     }
-    // Add more products as needed
   ];
 
   useEffect(() => {
@@ -244,23 +437,7 @@ const AllProducts = ({ category }) => {
     } else {
       setFilteredProducts(allProducts.filter(product => product.category === selectedCategory));
     }
-    setCurrentPage(0); // Reset to first page when category changes
   }, [selectedCategory]);
-
-  const totalPages = Math.ceil(filteredProducts.length / productsPerPage);
-  
-  const handleNextPage = () => {
-    setCurrentPage((prev) => (prev + 1) % totalPages);
-  };
-
-  const handlePrevPage = () => {
-    setCurrentPage((prev) => (prev - 1 + totalPages) % totalPages);
-  };
-
-  const getCurrentProducts = () => {
-    const start = currentPage * productsPerPage;
-    return filteredProducts.slice(start, start + productsPerPage);
-  };
 
   const categories = [
     { id: 'all', name: 'All Products' },
@@ -270,9 +447,7 @@ const AllProducts = ({ category }) => {
   ];
 
   const handleQuit = () => {
-    // You can customize this behavior based on your needs
     window.close();
-    // Alternative: window.location.href = '/'; // Navigate to home
   };
 
   const handleInquiry = () => {
@@ -325,7 +500,7 @@ const AllProducts = ({ category }) => {
       <section className="products-grid-section">
         <div className="container">
           <div className="products-grid">
-            {getCurrentProducts().map((product, index) => (
+            {filteredProducts.map((product, index) => (
               <div key={product.id} className={`product-card scale-up delay-${index + 1} hover-lift`}>
                 <div className="product-image">
                   <img src={product.image} alt={product.name} />
@@ -338,24 +513,6 @@ const AllProducts = ({ category }) => {
               </div>
             ))}
           </div>
-          
-          {/* Navigation Controls */}
-          {/* <div className="products-nav">
-            <button 
-              className="nav-button prev" 
-              onClick={handlePrevPage}
-              disabled={currentPage === 0}
-            >
-            
-            </button>
-            <button 
-              className="nav-button next" 
-              onClick={handleNextPage}
-              disabled={currentPage === totalPages - 1}
-            >
-            
-            </button>
-          </div> */}
         </div>
       </section>
 

@@ -70,7 +70,7 @@
 
 .products-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
   margin-bottom: 2rem;
 }
@@ -85,6 +85,9 @@
   display: flex;
   flex-direction: column;
   text-align: center;
+  max-width: 400px;
+  margin: 0 auto;
+  width: 100%;
 }
 
 .product-card:hover {
@@ -94,8 +97,9 @@
 
 .product-image {
   width: 100%;
-  height: 200px;
+  height: 250px;
   overflow: hidden;
+  position: relative;
 }
 
 .product-image img {
@@ -236,23 +240,61 @@
   height: 16px;
 }
 
+/* Update media queries for better responsiveness */
 @media screen and (max-width: 1200px) {
-  .products-grid {
-    grid-template-columns: repeat(2, 1fr);
+  .container {
+    padding: 0 1.5rem;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .products-grid {
-    grid-template-columns: 1fr;
-  }
-  
   .categories-grid {
-    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1rem;
     padding: 0 1rem;
   }
-  
+
   .category-btn {
-    width: 100%;
+    padding: 0.6rem 1.5rem;
+    font-size: 0.9rem;
   }
+
+  .product-image {
+    height: 200px;
+  }
+
+  .product-info h3 {
+    font-size: 1.1rem;
+  }
+
+  .product-description {
+    font-size: 0.85rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 0 1rem;
+  }
+
+  .products-hero h1 {
+    font-size: 2rem;
+  }
+
+  .products-hero p {
+    font-size: 1rem;
+  }
+
+  .product-card {
+    max-width: 100%;
+  }
+
+  .product-image {
+    height: 180px;
+  }
+}
+
+/* Add smooth scrolling for better UX */
+html {
+  scroll-behavior: smooth;
 } 

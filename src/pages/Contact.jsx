@@ -104,12 +104,13 @@ const Contact = () => {
             <div className="info-card slide-in-left delay-1 hover-lift">
               <i className="fas fa-map-marker-alt"></i>
               <h3>Our Location</h3>
-              <p>
-                185/1A, 5th Cross Rd, near Raghavendra Swamy Temple Road,<br />
-                Gururaja Layout, Doddanekundi,<br />
-                Vibhutipura, Bengaluru,<br />
-                Karnataka 560037
-              </p>
+              <div className="address-container">
+                <p>185/1A, 5th Cross Rd, near Raghavendra</p>
+                <p>Swamy Temple Road,</p>
+                <p>Gururaja Layout, Doddanekundi,</p>
+                <p>Vibhutipura, Bengaluru,</p>
+                <p>Karnataka 560037</p>
+              </div>
             </div>
             <div className="info-card slide-in-left delay-2 hover-lift">
               <i className="fas fa-phone"></i>

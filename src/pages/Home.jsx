@@ -539,13 +539,7 @@ const Home = () => {
           <div className="featured-products-container">
             <h2 className="section-title">Featured Products</h2>
             <div className="product-navigation">
-              <button
-                className="nav-button prev"
-                onClick={handlePrevPage}
-                disabled={currentPage === 0}
-              >
-                ←
-              </button>
+             
               <div className="product-grid">
                 {getCurrentProducts().map((product) => (
                   <div key={product.id} className="product-card">
@@ -567,13 +561,7 @@ const Home = () => {
                   </div>
                 ))}
               </div>
-              <button
-                className="nav-button next"
-                onClick={handleNextPage}
-                disabled={currentPage === totalPages - 1}
-              >
-                →
-              </button>
+             
             </div>
             <div className="view-all-container">
               <button
