@@ -70,364 +70,364 @@ const AllProducts = ({ category }) => {
       name: 'Cardamom (Small)',
       image: cardamomSmall,
       category: 'spices',
-      description: 'Our Premium Quality Small Cardamom is carefully handpicked from the finest plantations in India'
+      description: 'Premium quality small cardamom, carefully handpicked from the finest Indian plantations. Known for its intense aroma and distinctive flavor. Perfect for both sweet and savory dishes.'
     },
     {
       id: 2,
       name: 'Cardamom (Large)',
       image: cardamomLarge,
       category: 'spices',
-      description: 'Our High-Grade Large Cardamom is sourced from the lush Himalayan foothills, where the unique climate gives this spice its bold, smoky flavor and rich aroma'
+      description: 'High-grade large cardamom sourced from the Himalayan foothills. Features a unique bold and smoky flavor profile. Essential for authentic Indian and Middle Eastern cuisine.'
     },
     {
       id: 3,
       name: 'Black Pepper',
       image: pepper,
       category: 'spices',
-      description: 'Our Premium Black Pepper is sourced from the finest farms in South India, known for producing some of the world\'s most pungent and flavorful peppercorns.'
+      description: 'Premium black peppercorns from South Indian farms. Known for exceptional pungency and rich flavor. A versatile spice that enhances any dish.'
     },
     {
       id: 4,
       name: "Bird's Eye Chilli",
       image: birdsEyeChilli,
       category: 'spices',
-      description: 'Our Bird\'s Eye Chilli is one of the spiciest naturally grown chillies, prized for its intense heat, vibrant red color, and fiery kick.'
+      description: 'One of the spiciest natural chili varieties. Prized for its intense heat and vibrant red color. Adds a powerful kick to any dish.'
     },
     {
       id: 5,
       name: 'Capsicum',
       image: capsicum,
       category: 'herbs',
-      description: 'Our fresh capsicum is known for its crisp texture and sweet flavor, perfect for adding color and crunch to any dish.'
+      description: 'Fresh and crispy capsicum with vibrant colors. Perfect for salads and cooking applications. Adds natural sweetness and crunch to dishes.'
     },
     {
       id: 6,
       name: 'Red Chilli',
       image: chilli,
       category: 'spices',
-      description: 'Our Premium Quality Red Chilli is cultivated in the fertile lands of India, renowned for producing some of the world\'s most vibrant and flavorful chilli varieties.'
+      description: 'Premium quality red chilies from Indian farms. Known for balanced heat and rich flavor. Essential for authentic Indian cuisine.'
     },
     {
       id: 7,
       name: 'Paprika',
       image: paprika,
       category: 'spices',
-      description: 'Our Rich and Colorful Paprika is finely ground from premium, sun-ripened red peppers grown in nutrient-rich Indian soil.'
+      description: 'Rich and colorful paprika ground from premium peppers. Adds beautiful color and mild heat to dishes. Perfect for garnishing and cooking.'
     },
     {
       id: 8,
       name: 'Ginger',
       image: ginger,
       category: 'herbs',
-      description: 'Our Fresh and Aromatic Ginger is hand-harvested from premium farms, offering a bold, spicy-sweet flavor, citrusy aroma, and firm, juicy texture.'
+      description: 'Fresh and aromatic ginger from premium farms. Features a bold, spicy-sweet flavor profile. Essential for both culinary and medicinal uses.'
     },
     {
       id: 9,
       name: 'Turmeric',
       image: turmeric,
       category: 'spices',
-      description: 'Our Pure and Natural Turmeric is sourced from the finest turmeric-growing regions of India, known for producing vibrant golden color, earthy aroma, and potent curcumin levels.'
+      description: 'Pure and natural turmeric with high curcumin content. Known for its vibrant color and earthy aroma. A staple in Indian cuisine and Ayurvedic medicine.'
     },
     {
       id: 10,
       name: 'Coriander',
       image: coriander,
       category: 'herbs',
-      description: 'Our Fresh Coriander Leaves (also known as cilantro or dhaniya) are hand-picked from lush green farms and delivered within hours of harvest to ensure optimal freshness.'
+      description: 'Fresh coriander leaves harvested daily from local farms. Known for its distinctive aroma and flavor. Essential herb in Asian and Mexican cuisine.'
     },
     {
       id: 11,
       name: 'Cumin Seeds',
       image: cumin,
       category: 'seeds',
-      description: 'Our Premium Cumin Seeds are sourced from the finest farms of Rajasthan and Gujarat, India - regions globally recognized for producing high-oil content, uniform color.'
+      description: 'Premium cumin seeds from Rajasthan and Gujarat. Known for high oil content and uniform color. Essential spice in Indian and Middle Eastern cuisine.'
     },
     {
       id: 12,
       name: 'Fennel Seeds',
       image: fennel,
       category: 'seeds',
-      description: 'Our High-Quality Fennel Seeds are carefully harvested from the fertile lands of India and sun-dried to perfection. Known for their sweet, licorice-like flavor.'
+      description: 'High-quality fennel seeds from Indian farms. Features a sweet, licorice-like flavor profile. Perfect for both culinary and digestive purposes.'
     },
     {
       id: 13,
       name: 'Fenugreek',
       image: fenugreek,
       category: 'spices',
-      description: 'Fenugreek seeds, known as methi in India, are small, golden-yellow seeds with a distinctive bitter-sweet flavor and a strong aromatic presence.'
+      description: 'Traditional fenugreek seeds known as methi. Features a distinctive bitter-sweet flavor profile. Valued for both culinary and medicinal properties.'
     },
     {
       id: 14,
       name: 'Celery',
       image: celery,
       category: 'spices',
-      description: 'Celery seeds, derived from the wild celery plant, are small, brown seeds known for their strong, earthy, and slightly bitter flavor.'
+      description: 'Premium celery seeds with strong aroma. Known for their earthy and slightly bitter taste. Adds depth to soups, stews, and pickles.'
     },
     {
       id: 15,
       name: 'Aniseed',
       image: aniseed,
       category: 'spices',
-      description: 'Aniseed, commonly known as saunf in India, is a sweet and aromatic spice known for its delicate licorice-like flavor.'
+      description: 'Sweet and aromatic aniseed (saunf). Features a delicate licorice-like flavor. Popular in both culinary and confectionery applications.'
     },
     {
       id: 16,
       name: 'Ajowan',
       image: ajowan,
       category: 'spices',
-      description: 'Ajowan seeds, also known as Ajwain or carom seeds, are small, oval-shaped seeds with a strong, thyme-like aroma and a pungent, slightly bitter taste.'
+      description: 'Traditional Indian ajowan (carom) seeds. Features a strong thyme-like aroma. Known for its digestive and medicinal properties.'
     },
     {
       id: 17,
       name: 'Caraway',
       image: caraway,
       category: 'spices',
-      description: 'Caraway seeds, also known as Shahi Jeera or Persian Cumin, are aromatic seeds with a warm, sweet, and slightly peppery flavor.'
+      description: 'Premium caraway seeds (shahi jeera). Features warm and sweet peppery notes. Essential in European and Middle Eastern dishes.'
     },
     {
       id: 18,
       name: 'Dill',
       image: dill,
       category: 'spices',
-      description: 'Dill seeds, known as Suva or Sowa in India, are flat, oval-shaped seeds with a warm, slightly bitter flavor and a strong aromatic scent similar to caraway.'
+      description: 'Fresh dill seeds with intense aroma. Known for their unique flavor profile. Perfect for pickling and seasoning.'
     },
     {
       id: 19,
       name: 'Cinnamon',
       image: cinnamon,
       category: 'spices',
-      description: 'Our premium cinnamon is known for its sweet, woody flavor and intense aroma, perfect for both sweet and savory dishes.'
+      description: 'Premium quality Ceylon cinnamon. Features sweet and woody flavor notes. Essential spice for both sweet and savory dishes.'
     },
     {
       id: 20,
       name: 'Cassia',
       image: cassia,
       category: 'spices',
-      description: 'Cassia, often referred to as Chinese Cinnamon, is a robust and flavorful spice obtained from the bark of the Cinnamomum cassia tree.'
+      description: 'High-quality Chinese cinnamon (cassia). Known for its robust and intense flavor. Perfect for traditional Asian cuisine.'
     },
     {
       id: 21,
       name: 'Garlic',
       image: garlic,
       category: 'herbs',
-      description: 'Our premium garlic is known for its pungent flavor and aroma, essential for countless culinary applications.'
+      description: 'Premium quality fresh garlic bulbs. Known for intense flavor and aroma. Essential ingredient in cuisines worldwide.'
     },
     {
       id: 22,
       name: 'Curry Leaf',
       image: curry,
       category: 'herbs',
-      description: 'Our fresh curry leaves add an authentic touch to Indian dishes with their unique aroma and flavor.'
+      description: 'Fresh and aromatic curry leaves. Adds authentic flavor to Indian dishes. Essential in South Indian cuisine Essential in South Indian cuisine..'
     },
     {
       id: 23,
       name: 'Kokam',
       image: kokam,
       category: 'spices',
-      description: 'Kokum, a unique spice from Western India, adds a pleasant sourness to dishes and is known for its cooling properties.'
+      description: 'Traditional Indian kokum spice. Features unique cooling properties. Adds pleasant sourness to dishes Adds pleasant sourness to dishes.'
     },
     {
       id: 24,
       name: 'Mint',
       image: mint,
       category: 'herbs',
-      description: 'Our fresh mint leaves are known for their cooling effect and refreshing flavor, perfect for beverages and culinary uses.'
+      description: 'Fresh and cooling mint leaves. Perfect for beverages and garnishing. Essential herb in global cuisine. Perfect for beverages and garnishing'
     },
     {
       id: 25,
       name: 'Mustard Seeds',
       image: mustard,
       category: 'seeds',
-      description: 'Our premium mustard seeds are known for their pungent flavor and are essential in Indian tempering.'
+      description: 'Premium quality mustard seeds. Essential in Indian tempering. Adds pungent flavor to dishes. Adds pungent flavor to dishes.'
     },
     {
       id: 26,
       name: 'Parsley',
       image: parsley,
       category: 'herbs',
-      description: 'Our fresh parsley adds a bright, clean flavor and beautiful green color to any dish.'
+      description: 'Fresh and vibrant parsley leaves. Adds bright flavor and color.  Perfect for garnishing and seasoning. Perfect for garnishing and seasoning'
     },
     {
       id: 27,
       name: 'Pomegranate Seeds',
       image: pomegranate,
       category: 'seeds',
-      description: 'Our dried pomegranate seeds add a tangy sweetness and beautiful color to dishes.'
+      description: 'Premium dried pomegranate seeds. Adds tangy sweetness to dishes. Perfect for garnishing and flavoring.'
     },
     {
       id: 28,
       name: 'Saffron',
       image: saffron,
       category: 'spices',
-      description: 'Our premium saffron threads are known for their intense color, aroma, and flavor.'
+      description: 'Premium quality saffron threads. Known for intense color and aroma. Adds luxury to special dishes Known for intense color and aroma.'
     },
     {
       id: 29,
       name: 'Vanilla',
       image: vanilla,
       category: 'spices',
-      description: 'Our premium vanilla beans are rich in flavor and aroma, perfect for desserts and baking.'
+      description: 'Premium Madagascar vanilla beans. Rich in flavor and aroma. Essential in baking and desserts. Premium Madagascar vanilla beans'
     },
     {
       id: 30,
       name: 'Tejpat',
       image: tejpat,
       category: 'herbs',
-      description: 'Our Indian bay leaves (Tejpat) add a distinct aroma to Indian dishes.'
+      description: 'Traditional Indian bay leaves. Features distinct aromatic profile. Essential in North Indian cuisine. Essential in North Indian cuisine'
     },
     {
       id: 31,
       name: 'Long Pepper',
       image: longPepper,
       category: 'spices',
-      description: 'Long pepper, known as Pippali, has a unique spicy flavor different from black pepper.'
+      description: 'Traditional Indian long pepper (pippali). Features unique spicy flavor profile. Used in both cuisine and Ayurveda.'
     },
     {
       id: 32,
       name: 'Star Anise',
       image: starAnise,
       category: 'spices',
-      description: 'Our star anise has a distinct licorice-like flavor, essential in many Asian dishes.'
+      description: 'Premium quality star anise. Features distinct licorice flavor. Essential in Asian cuisine. Features distinct licorice flavor'
     },
     {
       id: 33,
       name: 'Sweet Flag',
       image: sweetFlag,
       category: 'herbs',
-      description: 'Sweet flag, or Vacha, is known for its aromatic properties and traditional uses.'
+      description: 'Traditional sweet flag (vacha). Known for aromatic properties. Used in traditional medicine. Used in traditional medicine'
     },
     {
       id: 34,
       name: 'Greater Galangal',
       image: greaterGalangal,
       category: 'spices',
-      description: 'Greater galangal adds a unique pine-like flavor to Asian dishes.'
+      description: 'Fresh greater galangal root. Features unique pine-like flavor. Essential in Southeast Asian cuisine  Essential in Southeast Asian cuisine.'
     },
     {
       id: 35,
       name: 'Horseradish',
       image: horseradish,
       category: 'spices',
-      description: 'Our horseradish root is known for its pungent heat and strong flavor.'
+      description: 'Fresh horseradish root. Known for pungent heat. Perfect for sauces and condiments Known for pungent heat.'
     },
     {
       id: 36,
       name: 'Capers',
       image: caper,
       category: 'herbs',
-      description: 'Our capers add a tangy, briny flavor to Mediterranean dishes.'
+      description: 'Premium quality capers. Adds tangy, briny flavor. Essential in Mediterranean dishes Essential in Mediterranean dishes.'
     },
     {
       id: 37,
       name: 'Cloves',
       image: clove,
       category: 'spices',
-      description: 'Our premium cloves are known for their intense aroma and warm, sweet flavor.'
+      description: 'Premium whole cloves. Features intense aroma and warmth. Essential in global cuisine Essential in global cuisine.'
     },
     {
       id: 38,
       name: 'Asafoetida',
       image: asafoetida,
       category: 'spices',
-      description: 'Asafoetida (Hing) adds a unique flavor to Indian dishes and aids in digestion.'
+      description: 'Pure asafoetida (hing). Known for unique savory flavor. Essential in Indian vegetarian cooking.  Essential in Indian vegetarian cooking.'
     },
     {
       id: 39,
       name: 'Camboge',
       image: camboge,
       category: 'spices',
-      description: 'Camboge (Kokum) is known for its sour taste and is used in Indian coastal cuisine.'
+      description: 'Traditional camboge (kokum). Features pleasant sour taste. Popular in coastal Indian cuisine. Features pleasant sour taste.'
     },
     {
       id: 40,
       name: 'Hyssop',
       image: hyssop,
       category: 'herbs',
-      description: 'Hyssop has a bitter-minty flavor and is used in both culinary and medicinal applications.'
+      description: 'Fresh hyssop herb. Features bitter-minty flavor. Used in culinary and medicinal applications Used in culinary and medicinal applications.'
     },
     {
       id: 41,
       name: 'Juniper Berries',
       image: juniper,
       category: 'spices',
-      description: 'Our juniper berries add a pine-like flavor to dishes and are essential in gin production.'
+      description: 'Premium juniper berries. Features pine-like flavor. Essential in European cuisine and gin Essential in European cuisine and gin.'
     },
     {
       id: 42,
       name: 'Bay Leaf',
       image: bayLeaf,
       category: 'herbs',
-      description: 'Our bay leaves add a subtle flavor to soups, stews, and sauces.'
+      description: 'Premium dried bay leaves. Adds subtle depth to dishes. Perfect for soups and stews.Perfect for soups and stews.'
     },
     {
       id: 43,
       name: 'Lovage',
       image: lovage,
       category: 'herbs',
-      description: 'Lovage has a celery-like flavor and is used in European cuisine.'
+      description: 'Fresh lovage herb. Features celery-like flavor. Popular in European cuisine Popular in European cuisine. Popular in European cuisine'
     },
     {
       id: 44,
       name: 'Marjoram',
       image: marjoram,
       category: 'herbs',
-      description: 'Marjoram has a sweet, oregano-like flavor perfect for Mediterranean dishes.'
-    },
+      description: 'Fresh marjoram leaves. Sweet oregano-like flavor. Perfect for Mediterranean dishes Sweet oregano-like flavor. Perfect for Mediterranean dishes.'
+    }, 
     {
       id: 45,
       name: 'Nutmeg',
       image: nutmeg,
       category: 'spices',
-      description: 'Our whole nutmeg adds warm, sweet notes to both sweet and savory dishes.'
+      description: 'Premium whole nutmeg. Features warm, sweet notes. Perfect for sweet and savory dishes  Features warm, sweet notes. Perfect for sweet and savory dishes.'
     },
     {
       id: 46,
       name: 'Mace',
       image: mace,
       category: 'spices',
-      description: 'Mace, the outer covering of nutmeg, has a more delicate and complex flavor.'
+      description: 'Premium quality mace. Delicate nutmeg-like flavor. Adds complexity to dishes  Delicate nutmeg-like flavor. Adds complexity to dishes.'
     },
     {
       id: 47,
       name: 'Basil',
       image: basil,
       category: 'herbs',
-      description: 'Our fresh basil is aromatic and flavorful, perfect for Italian and Thai cuisine.'
+      description: 'Fresh aromatic basil leaves. Perfect for Italian cuisine. Essential in pesto and garnishing Essential in pesto and garnishing.'
     },
     {
       id: 48,
       name: 'Poppy Seeds',
       image: poppy,
       category: 'seeds',
-      description: 'Our poppy seeds add texture and nutty flavor to baked goods and savory dishes.'
+      description: 'Premium quality poppy seeds. Adds nutty texture and flavor. Perfect for baking and cooking Perfect for baking and cooking.'
     },
     {
       id: 49,
       name: 'Allspice',
       image: allspice,
       category: 'spices',
-      description: 'Allspice combines flavors of cinnamon, nutmeg, and cloves in one unique spice.'
+      description: 'Premium allspice berries. Combines multiple spice flavors. Essential in Caribbean cuisine. Combines multiple spice flavors. Essential in Caribbean cuisine.'
     },
     {
       id: 50,
       name: 'Rosemary',
       image: rosemary,
       category: 'herbs',
-      description: 'Our fresh rosemary has a pine-like aroma and is perfect for Mediterranean dishes.'
+      description: 'Fresh rosemary sprigs. Features pine-like aroma. Perfect for Mediterranean dishes  Features pine-like aroma. Perfect for Mediterranean dishes.'
     },
     {
       id: 51,
       name: 'Sage',
       image: sage,
       category: 'herbs',
-      description: 'Our sage has an earthy, slightly peppery flavor perfect for poultry and stuffing.'
+      description: 'Fresh sage leaves. Earthy, peppery flavor. Perfect for poultry and stuffing. peppery flavor. Perfect for poultry and stuffing.'
     },
     {
       id: 52,
       name: 'Savory',
       image: savory,
       category: 'herbs',
-      description: 'Savory has a peppery thyme-like flavor and is used in European cuisine.'
+      description: 'Fresh savory herb. Peppery thyme-like flavor. Popular in European cuisine. Fresh savory herb. Peppery thyme-like flavor. Popular in European cuisine' 
     }
   ];
 
@@ -508,7 +508,7 @@ const AllProducts = ({ category }) => {
                 <div className="product-info">
                   <h3>{product.name}</h3>
                   <p className="product-description">{product.description}</p>
-                  <button className="inquiry-btn hover-scale" onClick={handleInquiry}>Send Inquiry</button>
+                  <button className="inquiry-btn hover-scale" onClick={handleInquiry}>Send Enquiry</button>
                 </div>
               </div>
             ))}

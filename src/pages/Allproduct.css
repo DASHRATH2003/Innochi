@@ -114,7 +114,7 @@
 }
 
 .product-info {
-  padding: 1rem;
+  padding: 1.5rem;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -126,16 +126,27 @@
 .product-info h3 {
   font-size: 1.2rem;
   color: #0A3A5E;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.8rem;
   text-align: center;
+  min-height: 1.5em;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .product-description {
   color: #666;
   font-size: 0.9rem;
-  line-height: 1.4;
-  margin-bottom: 1rem;
+  line-height: 1.5;
+  margin-bottom: 1.2rem;
   text-align: center;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  height: 4.5em;
+  opacity: 0.9;
 }
 
 .inquiry-btn {
