@@ -13,6 +13,8 @@ import spice6 from "../assets/Mace.webp";
 import spice7 from "../assets/Mint.jpg";
 
 import sliderImage1 from "../assets/exportimport2.webp";
+import savory from "../assets/Savory.webp";
+import cardamomlarge from "../assets/cardamomlarge.webp";
 import sliderImage2 from "../assets/exportimport3.jpg";
 import sliderImage3 from "../assets/allimport.jpg";
 import freshAllImage from "../assets/spiceexport.webp";
@@ -254,9 +256,9 @@ const Home = () => {
     },
     {
       id: 7,
-      title: "Dry Fruits",
-      shortDesc: "Premium quality dry fruits and nuts from selected regions.",
-      image: sliderImage1,
+      title: "Savory",
+      shortDesc: "Savory, especially Summer Savory, is an aromatic herb from the mint family known for its peppery and mildly spicy flavor. Commonly used in European.",
+      image: savory,
       details: {
         description:
           "Premium quality dry fruits and nuts sourced from the finest growing regions. Processed and packed under hygienic conditions.",
@@ -277,9 +279,9 @@ const Home = () => {
     },
     {
       id: 8,
-      title: "Organic Products",
-      shortDesc: "Certified organic products for health-conscious consumers.",
-      image: sliderImage2,
+      title: "cardamomlarge",
+      shortDesc: "Large Cardamom, also known as Black Cardamom or Badi Elaichi, is a bold and smoky-flavored spice widely used in Indian and Asian cuisines. ",
+      image: cardamomlarge,
       details: {
         description:
           "Certified organic products carefully grown without the use of chemical fertilizers and pesticides. Processed and packed under strict organic standards.",
@@ -315,11 +317,83 @@ const Home = () => {
     return productDetails.slice(start, start + productsPerPage);
   };
 
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevState) => ({
+      ...prevState,
+      [name]: value,
+    }));
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log("Form submitted:", formData);
+    setFormData({
+      name: "",
+      email: "",
+      company: "",
+      product: "",
+      quantity: "",
+      message: "",
+    });
+    alert("Thank you for your inquiry. We will get back to you soon!");
+  };
+
+  const handleQuoteRequest = () => {
+    navigate('/contact');
+  };
+
+  const handleSampleRequest = () => {
+    navigate('/contact');
+  };
+
+  const handlePackagingRequest = () => {
+    navigate('/contact');
+  };
+
+  const handleShippingQuote = () => {
+    navigate('/contact');
+  };
+
+  const handleImageClick = (id) => {
+    setSelectedImage(selectedImage === id ? null : id);
+  };
+
+  // Close modal when clicking outside
   const handleModalClick = (e) => {
     if (e.target.classList.contains("modal-overlay")) {
       setSelectedProduct(null);
     }
   };
+
+  useEffect(() => {
+    // Initialize Intersection Observer
+    const observerOptions = {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0.2,
+    };
+
+    const handleIntersection = (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("active");
+        }
+      });
+    };
+
+    const observer = new IntersectionObserver(
+      handleIntersection,
+      observerOptions
+    );
+
+    // Observe all elements with scroll-animate class
+    document.querySelectorAll(".scroll-animate").forEach((element) => {
+      observer.observe(element);
+    });
+
+    return () => observer.disconnect();
+  }, []);
 
   useEffect(() => {
     if (location.state?.scrollTo) {
@@ -335,9 +409,12 @@ const Home = () => {
 
   useEffect(() => {
     if (location.state?.scrollToCertificates) {
-      const certificatesSection = document.getElementById("certificates-section");
+      const certificatesSection = document.getElementById(
+        "certificates-section"
+      );
       if (certificatesSection) {
         certificatesSection.scrollIntoView();
+        // Clear the state after scrolling
         window.history.replaceState({}, document.title);
       }
     }
