@@ -34,34 +34,6 @@ const Contact = () => {
         </div>
       </section>
 
-      {/* Contact Info Section */}
-      <section className="contact-info">
-        <div className="container">
-          <div className="info-grid">
-            <div className="info-card slide-in-left delay-1 hover-lift">
-              <i className="fas fa-map-marker-alt"></i>
-              <h3>Our Location</h3>
-              <p>
-                185/1A, 5th Cross Rd, near Raghavendra Swamy Temple Road,<br />
-                Gururaja Layout, Doddanekundi,<br />
-                Vibhutipura, Bengaluru,<br />
-                Karnataka 560037
-              </p>
-            </div>
-            <div className="info-card slide-in-left delay-2 hover-lift">
-              <i className="fas fa-phone"></i>
-              <h3>Phone Number</h3>
-              <p>+91 1234567890</p>
-            </div>
-            <div className="info-card slide-in-left delay-3 hover-lift">
-              <i className="fas fa-envelope"></i>
-              <h3>Email Address</h3>
-              <p>info@inochiinternational.com</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       <section className="contact-form-section">
         <div className="container">
           <div className="form-container scale-up">
@@ -124,6 +96,36 @@ const Contact = () => {
           </div>
         </div>
       </section>
+
+      {/* Contact Info Section */}
+      <section className="contact-info">
+        <div className="container">
+          <div className="info-grid">
+            <div className="info-card slide-in-left delay-1 hover-lift">
+              <i className="fas fa-map-marker-alt"></i>
+              <h3>Our Location</h3>
+              <p>
+                185/1A, 5th Cross Rd, near Raghavendra Swamy Temple Road,<br />
+                Gururaja Layout, Doddanekundi,<br />
+                Vibhutipura, Bengaluru,<br />
+                Karnataka 560037
+              </p>
+            </div>
+            <div className="info-card slide-in-left delay-2 hover-lift">
+              <i className="fas fa-phone"></i>
+              <h3>Phone Number</h3>
+              <p>+91 1234567890</p>
+            </div>
+            <div className="info-card slide-in-left delay-3 hover-lift">
+              <i className="fas fa-envelope"></i>
+              <h3>Email Address</h3>
+              <p>info@inochiinternational.com</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      
 
       {/* Map Section */}
       <section className="map-section fade-in">
