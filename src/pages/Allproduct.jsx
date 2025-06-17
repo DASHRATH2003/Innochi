@@ -149,6 +149,91 @@ const AllProducts = ({ category }) => {
       image: fennel,
       category: 'seeds',
       description: 'Our High-Quality Fennel Seeds are carefully harvested from the fertile lands of India and sun-dried to perfection. Known for their sweet, licorice-like flavor.'
+    },
+
+    {
+      id: 13,
+      name: 'fenugreek',
+      image: fenugreek,
+      category: 'spices',
+      description: 'Fenugreek seeds, known as methi in India, are small, golden-yellow seeds with a distinctive bitter-sweet flavor and a strong aromatic presence.'
+    },
+    {
+      id: 14,
+      name: 'celery',
+      image: celery,
+      category: 'spices',
+      description: 'Celery seeds, derived from the wild celery plant, are small, brown seeds known for their strong, earthy, and slightly bitter flavor. '
+    },
+    {
+      id: 15,
+      name: 'aniseed',
+      image: aniseed,
+      category: 'spices',
+      description: 'Aniseed, commonly known as saunf in India, is a sweet and aromatic spice known for its delicate licorice-like flavor. '
+    },
+    {
+      id: 16,
+      name: "ajowan",
+      image:ajowan,
+      category: 'spices',
+      description: 'Ajowan seeds, also known as Ajwain or carom seeds, are small, oval-shaped seeds with a strong, thyme-like aroma and a pungent, slightly bitter taste. '
+    },
+    {
+      id: 17,
+      name: 'Capsicum',
+      image: aniseed,
+      category: 'herbs',
+      description: 'Aniseed, also known as saunf in India, is a sweet and aromatic spice with a flavor reminiscent of licorice. It is widely used in culinary, medicinal, and confectionery applications. '
+    },
+    {
+      id: 18,
+      name: 'caraway',
+      image: caraway,
+      category: 'spices',
+      description: 'Caraway seeds, also known as Shahi Jeera or Persian Cumin, are aromatic seeds with a warm, sweet, and slightly peppery flavor.'
+    },
+    {
+      id: 19,
+      name: 'dill',
+      image: dill,
+      category: 'spices',
+      description: 'Dill seeds, known as Suva or Sowa in India, are flat, oval-shaped seeds with a warm, slightly bitter flavor and a strong aromatic scent similar to caraway. '
+    },
+    {
+      id: 20,
+      name: 'cinnamon',
+      image: cinnamon,
+      category: 'herbs',
+      description: 'Cinnamon, known as Dalchini in India, is a highly fragrant and flavorful spice derived from the inner bark of the Cinnamomum tree. .'
+    },
+    {
+      id: 21,
+      name: 'cassia',
+      image: cassia,
+      category: 'spices',
+      description: 'Cassia, often referred to as Chinese Cinnamon, is a robust and flavorful spice obtained from the bark of the Cinnamomum cassia tree. I'
+    },
+    {
+      id: 22,
+      name: 'garlic',
+      image: garlic,
+      category: 'herbs',
+      description: 'Garlic, known as Lahsun in India, is one of the most widely used culinary and medicinal ingredients across the globe. Recognized for its strong aroma and pungent flavor.'
+    },
+    {
+      id: 23,
+      name: 'curry',
+      image: curry,
+      category: 'seeds',
+      description: 'Curry leaves, known as Kadi Patta in India, are aromatic herbs widely used in South Asian cuisine to enhance the flavor of dishes.'
+    },
+    {
+      id: 24,
+      name: 'kokam',
+      image: kokam,
+      category: 'seeds',
+      description: 'Kokum, scientifically known as Garcinia Indica, is a tropical fruit native to the Western Ghats of India, especially Maharashtra, Goa, and Karnataka.'
     }
     // Add more products as needed
   ];
@@ -251,22 +336,22 @@ const AllProducts = ({ category }) => {
           </div>
           
           {/* Navigation Controls */}
-          <div className="products-nav">
+          {/* <div className="products-nav">
             <button 
               className="nav-button prev" 
               onClick={handlePrevPage}
               disabled={currentPage === 0}
             >
-              &#8249;
+            
             </button>
             <button 
               className="nav-button next" 
               onClick={handleNextPage}
               disabled={currentPage === totalPages - 1}
             >
-              &#8250;
+            
             </button>
-          </div>
+          </div> */}
         </div>
       </section>
 
