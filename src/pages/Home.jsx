@@ -15,7 +15,7 @@ import spice7 from "../assets/Mint.jpg";
 import sliderImage1 from "../assets/exportimport2.webp";
 import sliderImage2 from "../assets/exportimport3.jpg";
 import sliderImage3 from "../assets/allimport.jpg";
-import freshAllImage from "../assets/freshallimage.jpg";
+import freshAllImage from "../assets/spiceexport.webp";
 
 // Add certification image imports
 import mcaLogo from "../assets/ministryofcorporetion.webp";
