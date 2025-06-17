@@ -6,7 +6,7 @@ import '../styles/animations.css';
 // Import images
 import heroImage from '../assets/qualityansepty.jpeg';
 import spicesImage from '../assets/spiceexport.webp';
-import qualityImage from '../assets/basmatirice.jpg';
+import qualityImage from '../assets/Basmatirice.jpg';
 import reachImage from '../assets/reachimage.jpg';
 import certImage from '../assets/certificate1.webp';
 import visionImage from '../assets/ourvision.jpeg';
