@@ -97,6 +97,25 @@
   margin-bottom: 8px;
 }
 
+/* Working Hours styles */
+.info-card:last-child p {
+  margin-bottom: 5px;
+  font-size: 0.95rem;
+}
+
+.info-card:last-child p:nth-child(2),
+.info-card:last-child p:nth-child(4) {
+  color: #2c5282;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.info-card:last-child p:last-child {
+  margin-top: 10px;
+  color: #e53e3e;
+  font-weight: 500;
+}
+
 /* Contact Form Section */
 .contact-form-section {
   padding: 60px 0;

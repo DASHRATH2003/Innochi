@@ -124,6 +124,16 @@ const Contact = () => {
               <h3>Email Address</h3>
               <p>vijaykumar@innochiinternational.com</p>
             </div>
+            
+            <div className="info-card slide-in-left delay-4 hover-lift">
+              <i className="fas fa-clock"></i>
+              <h3>Working Hours</h3>
+              <p>Monday - Friday</p>
+              <p>9:00 AM - 6:00 PM</p>
+              <p>Saturday</p>
+              <p>9:00 AM - 2:00 PM</p>
+              <p>Sunday: Closed</p>
+            </div>
           </div>
         </div>
       </section>
