@@ -5,8 +5,6 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useNavigate, useLocation } from "react-router-dom";
 
-// Import slider images
-
 import spice1 from "../assets/Basil.jpg";
 import spice2 from "../assets/Cassia.webp";
 import spice3 from "../assets/Cumin.jpg";
@@ -18,9 +16,9 @@ import spice7 from "../assets/Mint.jpg";
 import sliderImage1 from "../assets/exportimport2.webp";
 import sliderImage2 from "../assets/exportimport3.jpg";
 import sliderImage3 from "../assets/allimport.jpg";
-import freshAllImage from "../assets/allimport.jpg"; // Import image for company intro
+import freshAllImage from "../assets/freshallimage.jpg";
 import tomatoesImage from "../assets/vagitable1.jpeg";
-import spicesImage from "../assets/allspice.webp";
+import spicesCollectionImage from "../assets/spiceboard.webp";
 // Add certification image imports
 import mcaLogo from "../assets/ministryofcorporetion.webp";
 import commerceLogo from "../assets/depertmentofcommerce.webp";
@@ -618,8 +616,25 @@ const Home = () => {
       
 
         {/* Spices Section */}
-       
-             
+        <section className="spices-section">
+          <div className="spices-container">
+            <div className="spices-image">
+              <img src={spicesCollectionImage} alt="Premium Quality Spices" />
+            </div>
+            <div className="spices-content">
+              <h2>Premium Quality<br />Indian Spices</h2>
+              <p>
+                Experience the authentic flavors of India through our premium quality spices. 
+                Each spice is carefully selected and processed to maintain its natural aroma, 
+                color, and therapeutic properties.
+              </p>
+              <p>
+                From the aromatic cardamom to the vibrant turmeric, our spices add the perfect 
+                touch to your culinary creations.
+              </p>
+            </div>
+          </div>
+        </section>
 
         {/* Company Introduction Section */}
         <section id="about-section" className="company-intro-section">
