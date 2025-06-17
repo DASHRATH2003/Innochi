@@ -616,25 +616,7 @@ const Home = () => {
       
 
         {/* Spices Section */}
-        <section className="spices-section">
-          <div className="spices-container">
-            <div className="spices-image">
-              <img src={spicesCollectionImage} alt="Premium Quality Spices" />
-            </div>
-            <div className="spices-content">
-              <h2>Premium Quality<br />Indian Spices</h2>
-              <p>
-                Experience the authentic flavors of India through our premium quality spices. 
-                Each spice is carefully selected and processed to maintain its natural aroma, 
-                color, and therapeutic properties.
-              </p>
-              <p>
-                From the aromatic cardamom to the vibrant turmeric, our spices add the perfect 
-                touch to your culinary creations.
-              </p>
-            </div>
-          </div>
-        </section>
+        
 
         {/* Company Introduction Section */}
         <section id="about-section" className="company-intro-section">
