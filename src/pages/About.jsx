@@ -8,7 +8,6 @@ import heroImage from '../assets/qualityansepty.jpeg';
 import spicesImage from '../assets/spiceexport.webp';
 import qualityImage from '../assets/Basmatirice.jpg';
 import reachImage from '../assets/reachimage.jpg';
-import certImage from '../assets/certificate1.webp';
 import visionImage from '../assets/ourvision.jpeg';
 
 const About = () => {
@@ -112,23 +111,7 @@ const About = () => {
           </div>
         </section>
 
-        <section className="about-section certifications-section">
-          <div className="section-content">
-            <div className="image-content">
-              <img src={certImage} alt="Certifications" />
-            </div>
-            <div className="text-content">
-              <h2>Certifications & Approvals</h2>
-              <p>We adhere to the highest industry standards:</p>
-              <ul>
-                <li>Spice Board of India (Member)</li>
-                <li>Bureau of Indian Standards (BIS)</li>
-                <li>Food Safety and Standards Authority of India (FSSAI)</li>
-                <li>Directorate General of Foreign Trade (DGFT) – Importer-Exporter Code (IEC) approved</li>
-              </ul>
-            </div>
-          </div>
-        </section>
+        
 
         <section className="about-section vision-section">
           <div className="section-content">
