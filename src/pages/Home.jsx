@@ -506,7 +506,7 @@ const Home = () => {
   <div className="vision-container">
     <div className="vision-wrapper">
       <div className="vision-content">
-        <h2 className="vision-title">Welcome To Inochi International</h2>
+        <h2 className="vision-title">Welcome To Inochi International pvt ltd</h2>
         <div className="vision-text">
           <p>
             Welcome to Inochi International Pvt. Ltd, a Bangalore-based exporter of the finest Indian spices and premium basmati rice.
