@@ -433,10 +433,12 @@
   /* Reviews Section */
   .reviews-section {
     padding: 40px 20px;
+   
   }
 
   .reviews-container {
     padding: 0;
+    
   }
 
   .review-card {
@@ -456,6 +458,7 @@
   .reviewer-title,
   .reviewer-location {
     font-size: 0.85rem;
+    margin-bottom: 20px;
   }
 
   /* Certifications Section */

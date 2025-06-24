@@ -1,4 +1,5 @@
 // src/App.js
+import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
@@ -8,6 +9,9 @@ import Shop from './pages/Shop';
 import AllProducts from './pages/Allproduct';
 import Contact from './pages/Contact';
 import ScrollToTop from './components/ScrollToTop';
+import LanguageSelector from './components/LanguageSelector';
+import TopBar from './components/TopBar';
+import ChatBox from './components/ChatBox';
 import './App.css';
 
 
@@ -16,7 +20,10 @@ function App() {
     <Router>
       <div className="app">
         <ScrollToTop />
+        <TopBar />
+        <LanguageSelector />
         <Navbar />
+        <ChatBox />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />

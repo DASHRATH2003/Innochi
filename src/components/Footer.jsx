@@ -71,7 +71,7 @@ const Footer = () => {
             </li>
             <li>
               <i className="fas fa-envelope"></i>
-              <span>vijaykumar@innochiinternational.com</span>
+              <span>vijaykumar@inochiinternational.com</span>
             </li>
             <li className="address-item">
               <i className="fas fa-map-marker-alt"></i>

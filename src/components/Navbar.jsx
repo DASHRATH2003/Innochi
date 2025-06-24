@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import "./Navbar.css";
-import logo from "../assets/logoinnochi.png";
+import logo from "../assets/logo1.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -58,115 +58,136 @@ const Navbar = () => {
   };
 
   return (
-    <nav className={`navbar ${scrolled ? "scrolled" : ""}`}>
-      <div className="navbar-container">
-        <Link to="/" className="navbar-logo">
-          <img
-            src={logo}
-            alt="Inochi International Logo"
-            className="navbar-logo-img"
-          />
-        </Link>
+    <>
+     
+      <nav className={`navbar ${scrolled ? "scrolled" : ""}`}>
+        <div className="navbar-container">
+          <Link to="/" className="navbar-logo">
+            <img
+              src={logo}
+              alt="Inochi International Logo"
+              className="navbar-logo-img"
+            />
+          </Link>
 
-        <div className="menu-icon" onClick={() => setIsOpen(!isOpen)}>
-          <div className={`hamburger ${isOpen ? "active" : ""}`}>
-            <span></span>
-            <span></span>
-            <span></span>
+          <div className="menu-icon" onClick={() => setIsOpen(!isOpen)}>
+            <div className={`hamburger ${isOpen ? "active" : ""}`}>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
           </div>
-        </div>
 
-        <ul className={isOpen ? "nav-menu active" : "nav-menu"}>
-          <li className="nav-item">
-            <a
-              href="#home"
-              className={`nav-links ${
-                location.pathname === "/" ? "active" : ""
-              }`}
-              onClick={(e) => {
-                e.preventDefault();
-                handleNavigation("home-section");
-              }}
-            >
-              Home
-            </a>
-          </li>
-          <li className="nav-item">
-            <Link
-              to="/about"
-              className={`nav-links ${location.pathname === "/about" ? "active" : ""}`}
-              onClick={() => {
-                setIsOpen(false);
-                setActiveDropdown(null);
-              }}
-            >
-              About Us
-            </Link>
-          </li>
-          <li className="nav-item">
-            <a
-              href="#certificates"
-              className="nav-links"
-              onClick={(e) => {
-                e.preventDefault();
-                handleNavigation("certificates-section");
-              }}
-            >
-              Certificate
-            </a>
-          </li>
-          <li
-            className={`nav-item dropdown ${
-              activeDropdown === 0 ? "active" : ""
-            }`}
-            onClick={() => toggleDropdown(0)}
-          >
-            <Link
-              to="/products"
-              className={`nav-links ${
-                location.pathname.includes("/products") ? "active" : ""
-              }`}
-            >
-              Products <span className="dropdown-arrow">▼</span>
-            </Link>
-            <ul
-              className={`dropdown-menu ${
+          <ul className={isOpen ? "nav-menu active" : "nav-menu"}>
+            <li className="nav-item">
+              <a
+                href="#home"
+                className={`nav-links ${
+                  location.pathname === "/" ? "active" : ""
+                }`}
+                onClick={(e) => {
+                  e.preventDefault();
+                  handleNavigation("home-section");
+                }}
+              >
+                Home
+              </a>
+            </li>
+            <li className="nav-item">
+              <Link
+                to="/about"
+                className={`nav-links ${location.pathname === "/about" ? "active" : ""}`}
+                onClick={() => {
+                  setIsOpen(false);
+                  setActiveDropdown(null);
+                }}
+              >
+                About Us
+              </Link>
+            </li>
+            <li className="nav-item">
+              <a
+                href="#certificates"
+                className="nav-links"
+                onClick={(e) => {
+                  e.preventDefault();
+                  handleNavigation("certificates-section");
+                }}
+              >
+                Certificate
+              </a>
+            </li>
+            <li
+              className={`nav-item dropdown ${
                 activeDropdown === 0 ? "active" : ""
               }`}
+              onClick={() => toggleDropdown(0)}
             >
-              {productCategories.map((category, index) => (
-                <li key={index}>
-                  <Link
-                    to={category.path}
-                    className="dropdown-item"
-                    onClick={() => {
-                      setIsOpen(false);
-                      setActiveDropdown(null);
-                    }}
-                  >
-                    {category.title}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </li>
-          <li className="nav-item">
-            <Link
-              to="/contact"
-              className={`nav-links ${
-                location.pathname === "/contact" ? "active" : ""
-              }`}
-              onClick={() => {
-                setIsOpen(false);
-                setActiveDropdown(null);
-              }}
-            >
-              Contact
-            </Link>
-          </li>
+              <Link
+                to="/products"
+                className={`nav-links ${
+                  location.pathname.includes("/products") ? "active" : ""
+                }`}
+              >
+                Products <span className="dropdown-arrow">▼</span>
+              </Link>
+              <ul
+                className={`dropdown-menu ${
+                  activeDropdown === 0 ? "active" : ""
+                }`}
+              >
+                {productCategories.map((category, index) => (
+                  <li key={index}>
+                    <Link
+                      to={category.path}
+                      className="dropdown-item"
+                      onClick={() => {
+                        setIsOpen(false);
+                        setActiveDropdown(null);
+                      }}
+                    >
+                      {category.title}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </li>
+            <li className="nav-item">
+              <Link
+                to="/contact"
+                className={`nav-links ${
+                  location.pathname === "/contact" ? "active" : ""
+                }`}
+                onClick={() => {
+                  setIsOpen(false);
+                  setActiveDropdown(null);
+                }}
+              >
+                Contact
+              </Link>
+            </li>
 
-          {/* Mobile Inquiry Button - Only visible in mobile menu */}
-          <li className="nav-item mobile-inquiry-btn">
+            {/* Mobile Inquiry Button - Only visible in mobile menu */}
+            <li className="nav-item mobile-inquiry-btn">
+              <button className="inquiry-btn" onClick={handleInquiry}>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  className="bi bi-calendar2-plus"
+                  viewBox="0 0 16 16"
+                >
+                  <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM2 2a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1H2z" />
+                  <path d="M2.5 4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H3a.5.5 0 0 1-.5-.5V4zM8 8a.5.5 0 0 1 .5.5V10H10a.5.5 0 0 1 0 1H8.5v1.5a.5.5 0 0 1-1 0V11H6a.5.5 0 0 1 0-1h1.5V8.5A.5.5 0 0 1 8 8z" />
+                </svg>
+                 ENQUIRY NOW
+              </button>
+            </li>
+          </ul>
+
+          {/* Desktop Inquiry Button - Only visible on desktop */}
+          <div className="desktop-inquiry-btn">
             <button className="inquiry-btn" onClick={handleInquiry}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -179,31 +200,12 @@ const Navbar = () => {
                 <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM2 2a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1H2z" />
                 <path d="M2.5 4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H3a.5.5 0 0 1-.5-.5V4zM8 8a.5.5 0 0 1 .5.5V10H10a.5.5 0 0 1 0 1H8.5v1.5a.5.5 0 0 1-1 0V11H6a.5.5 0 0 1 0-1h1.5V8.5A.5.5 0 0 1 8 8z" />
               </svg>
-               ENQUIRY NOW
+              ENQUIRY NOW
             </button>
-          </li>
-        </ul>
-
-        {/* Desktop Inquiry Button - Only visible on desktop */}
-        {/* Desktop Inquiry Button - Only visible on desktop */}
-        <div className="desktop-inquiry-btn">
-          <button className="inquiry-btn" onClick={handleInquiry}>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              fill="currentColor"
-              className="bi bi-calendar2-plus"
-              viewBox="0 0 16 16"
-            >
-              <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM2 2a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1H2z" />
-              <path d="M2.5 4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H3a.5.5 0 0 1-.5-.5V4zM8 8a.5.5 0 0 1 .5.5V10H10a.5.5 0 0 1 0 1H8.5v1.5a.5.5 0 0 1-1 0V11H6a.5.5 0 0 1 0-1h1.5V8.5A.5.5 0 0 1 8 8z" />
-            </svg>
-            ENQUIRY NOW
-          </button>
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </>
   );
 };
 
