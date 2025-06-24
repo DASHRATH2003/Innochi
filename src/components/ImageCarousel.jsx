@@ -101,10 +101,10 @@ const ImageCarousel = () => {
         </div>
 
         <button className="carousel-button prev" onClick={prevSlide}>
-          ❮
+          
         </button>
         <button className="carousel-button next" onClick={nextSlide}>
-          ❯
+          
         </button>
 
         <div className="carousel-dots">
